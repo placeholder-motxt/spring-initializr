@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  spring-initializr:
+    build: .
+    container_name: initializr
+    ports:
+      - "8080:8080"
