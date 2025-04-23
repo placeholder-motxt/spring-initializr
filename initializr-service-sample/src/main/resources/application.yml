@@ -476,6 +476,12 @@ initializr:
               description: Accessing Data with JPA
             - rel: reference
               href: https://docs.spring.io/spring-boot/{bootVersion}/reference/data/sql.html#data.sql.jpa-and-spring-data
+        - name: Jakarta Persistence API
+          id: jakarta-persistence-api
+          description: Jakarta Persistence API (JPA) Library
+          groupId: jakarta.persistence
+          artifactId: jakarta.persistence-api
+          starter: false
         - name: Spring Data JDBC
           id: data-jdbc
           description: Persist data in SQL stores with plain JDBC using Spring Data.
@@ -603,6 +609,34 @@ initializr:
           description: A JDBC and R2DBC driver that allows Java programs to connect to a PostgreSQL database using standard, database independent Java code.
           groupId: org.postgresql
           artifactId: postgresql
+          scope: runtime
+          starter: false
+        - name: SQLite Driver
+          id: sqlite
+          description: A JDBC driver for SQLite
+          groupId: org.xerial
+          artifactId: sqlite-jdbc
+          scope: runtime
+          starter: false
+        - name: Hibernate Core
+          id: hibernate-core
+          description: Core library for Hibernate
+          groupId: org.hibernate.orm
+          artifactId: hibernate-core
+          scope: runtime
+          starter: false
+        - name: Hibernate Community Dialects
+          id: hibernate-community-dialects
+          description: Community Dialects for SQLite
+          groupId: org.hibernate.orm
+          artifactId: hibernate-community-dialects
+          scope: runtime
+          starter: false
+        - name: HikariCP JDBC
+          id: hikaricp
+          description: Lightweight and lightning-fast JDBC connection pooling framework
+          groupId: com.zaxxer
+          artifactId: HikariCP
           scope: runtime
           starter: false
     - name: NoSQL
@@ -946,6 +980,15 @@ initializr:
               description: Getting Started with Sentry
             - rel: reference
               href: https://docs.sentry.io/platforms/java/
+        - name: Springdoc OpenAPI Starter WebMVC UI
+          id: springdoc-starter-webmvc-ui
+          description: OpenAPI starter for Spring WebMVC with UI
+          groupId: org.springdoc
+          artifactId: springdoc-openapi-starter-webmvc-ui
+          links:
+            - rel: guide
+              href: https://springdoc.org/
+              description: Getting Started with Springdoc
     - name: Observability
       content:
         - name: Datadog
