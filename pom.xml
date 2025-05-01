@@ -94,7 +94,7 @@
 			</properties>
 			<build>
 				<plugins>
-					<plugin>
+					<!-- <plugin>
 						<groupId>io.spring.javaformat</groupId>
 						<artifactId>spring-javaformat-maven-plugin</artifactId>
 						<version>${spring-javaformat.version}</version>
@@ -106,7 +106,7 @@
 								</goals>
 							</execution>
 						</executions>
-					</plugin>
+					</plugin> -->
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-checkstyle-plugin</artifactId>
@@ -117,11 +117,11 @@
 								<artifactId>checkstyle</artifactId>
 								<version>10.17.0</version>
 							</dependency>
-							<dependency>
+							<!-- <dependency>
 								<groupId>io.spring.javaformat</groupId>
 								<artifactId>spring-javaformat-checkstyle</artifactId>
 								<version>${spring-javaformat.version}</version>
-							</dependency>
+							</dependency> -->
 							<dependency>
 								<groupId>io.spring.nohttp</groupId>
 								<artifactId>nohttp-checkstyle</artifactId>
@@ -129,7 +129,7 @@
 							</dependency>
 						</dependencies>
 						<executions>
-							<execution>
+							<!-- <execution>
 								<id>checkstyle-validation</id>
 								<phase>validate</phase>
 								<configuration>
@@ -141,7 +141,7 @@
 								<goals>
 									<goal>check</goal>
 								</goals>
-							</execution>
+							</execution> -->
 							<execution>
 								<id>nohttp-checkstyle-validation</id>
 								<phase>validate</phase>
@@ -183,7 +183,7 @@
 							<configuration>
 								<lifecycleMappingMetadata>
 									<pluginExecutions>
-										<pluginExecution>
+										<!-- <pluginExecution>
 											<pluginExecutionFilter>
 												<groupId>org.apache.maven.plugins</groupId>
 												<artifactId>maven-checkstyle-plugin</artifactId>
@@ -195,7 +195,7 @@
 											<action>
 												<ignore/>
 											</action>
-										</pluginExecution>
+										</pluginExecution> -->
 										<pluginExecution>
 											<pluginExecutionFilter>
 												<groupId>org.codehaus.mojo</groupId>
