@@ -985,6 +985,7 @@ initializr:
           description: OpenAPI starter for Spring WebMVC with UI
           groupId: org.springdoc
           artifactId: springdoc-openapi-starter-webmvc-ui
+          version: 2.2.0
           links:
             - rel: guide
               href: https://springdoc.org/
